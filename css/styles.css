@@ -1,0 +1,300 @@
+:root {
+    --primary-color: #212121;
+    --second-color: #757575;
+    --third-color: #2196F3;
+    --background-main-color: #fff;
+}
+body {
+    background-color: var(--background-main-color);
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--third-color);
+    margin-right: 94px;
+}
+.logo-studio {
+    color: #000;
+}
+.nav-list li {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-right: 50px;
+}
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+.nav-list .link:hover, .nav-list .link:focus {
+    color: var(--third-color);
+}
+.link.current {
+    color: #188CE8;
+}
+
+.contacts-header .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+    margin-left: 50px;
+}
+
+.contacts-header .link:hover, .contacts-header .link:focus {
+    color: var(--third-color);
+}
+/* hero */
+
+.hero {
+    background-color: #2F303A;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 94px;
+}
+.hero-title {
+    padding-top: 200px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background-main-color);
+}
+.hero-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--third-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--background-main-color);
+    margin-bottom: 200px;
+    padding: 10px 32px;
+}
+.hero-button:hover, hero-button:focus {
+    background-color: #188CE8;
+}
+/* Feature */
+
+.features-list {
+    display: flex;
+    margin-bottom: 94px;
+}
+.features-list li {
+    margin-right: 30px;
+}
+.features-list li:last-child {
+    margin-right: 0;
+}
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+/* Work */
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.work-list {
+    margin-bottom: 94px;
+}
+/* Team */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-card {
+    background-color: var(--background-main-color);
+    height: 368px;
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.team-card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 20px;
+}
+.team-card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Portfolio */
+
+.button {
+    font-family: inherit;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    padding: 6px 22px;
+    margin-right: 8px;
+}
+.button:hover {
+    color: var(--background-main-color);
+    background-color: var(--third-color);
+}
+.button:focus {
+    color: var(--background-main-color);
+    background-color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* button:active {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+} */
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 30px;
+}
+.portfolio-list li {
+    border: 1px solid #EEEEEE;
+}
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 94px;
+}
+
+.portfolio-titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+}
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #2F303A;
+}
+.footer-about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-studio-footer {
+    color: var(--background-main-color);
+}
+.address-list {
+    margin-top: 20px;
+}
+.address-list li {
+    height: 30px;
+}
+.footer-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.street-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--background-main-color);
+}
+.street-link:hover, .street-link:focus {
+    color: var(--third-color);
+}
+.footer-link:hover, .footer-link:focus {
+    color: var(--third-color);
+}
